@@ -1,5 +1,3 @@
-#deposito ->
-
 TT_SAQUE = 3
 Saldo = 0
 limite = 500
@@ -10,10 +8,10 @@ saques_realizados = 0
 menu = """
     Digite a operacao que deseja realizar
 
-    [d] - Depositar
-    [s] - Sacar
-    [e] - Extrato
-    [q] - Sair
+    [0] - Depositar
+    [1] - Sacar
+    [2] - Extrato
+    [3] - Sair
 
 """
 
@@ -21,13 +19,13 @@ while True:
 
     opcao = input(menu)
 
-    if opcao == "d":
+    if opcao == "0":
         deposito = int(input("Digite o valor a ser depositado: "))
         Saldo += deposito
         extrato += f"Depósito: R$ {deposito:.2F}\n"
-        print(f"Deposito realizado com sucesso! Saldo atual de {Saldo:.2f}")
-        
-    elif opcao == "s":
+        print(f"Deposito realizado com sucesso! Saldo atual de R$ {Saldo:.2f}")
+
+    elif opcao == "1":
         if saques_realizados >= TT_SAQUE:
             print("Voce excedeu o numero e saques diários")
         else:
@@ -47,10 +45,10 @@ while True:
             except ValueError:
                 print("entrada invalida. Digite apenas numeros.")
 
-    elif opcao == "e":
+    elif opcao == "2":
         print("============Extrato=============")
         print(extrato)      
-    elif opcao == "q":
+    elif opcao == "3":
          break
     else:
         print("operação invalida")
