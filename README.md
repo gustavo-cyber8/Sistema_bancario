@@ -1,4 +1,4 @@
-# 💸 Sistema Bancário Simples
+# Sistema Bancário Simples
 
 Este repositório apresenta um sistema bancário simples desenvolvido em Python. O objetivo é simular as principais operações bancárias, como saque, depósito e extrato, com algumas regras básicas para controle das operações.
 
@@ -58,4 +58,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-> Feito com 💙 por [gustavo-cyber8](https://github.com/gustavo-cyber8)
+> Feito por [gustavo-cyber8](https://github.com/gustavo-cyber8)
